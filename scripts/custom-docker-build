@@ -98,4 +98,5 @@ docker_command=$(generate_command $@)
 echo "$1: executing $docker_command"
 eval $docker_command
 docker images
+echo $1
 docker push $1
