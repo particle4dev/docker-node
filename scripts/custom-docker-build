@@ -81,10 +81,10 @@ function generate_command() {
   printf -- ".\\n"
 }
 
-exitCode=$($CI_PROJECT_DIR/scripts/pull-docker-image $1 | tail -n 1)
+exitCode=$($CI_PROJECT_DIR/scripts/pull-docker-image $3 | tail -n 1)
 
 if [ $exitCode -eq "0" ]; then
-  echo "FOUND $1"; exit 0;
+  echo "FOUND $3"; exit 0;
 fi
 
 Dockerfile="$CI_PROJECT_DIR/Dockerfile"
@@ -95,11 +95,6 @@ if fileExists $Dockerfile; then
 fi
 
 docker_command=$(generate_command $@)
-echo "$1: executing $docker_command"
+echo "$3: executing $docker_command"
 eval $docker_command
-
-echo $1
-echo $2
-echo $3
-
-docker push $1
+docker push $3
