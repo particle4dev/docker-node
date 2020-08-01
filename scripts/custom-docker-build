@@ -101,4 +101,4 @@ docker images
 echo $1
 echo $2
 echo $3
-docker push $1
+docker push $3
