@@ -99,4 +99,6 @@ echo "$1: executing $docker_command"
 eval $docker_command
 docker images
 echo $1
+echo $2
+echo $3
 docker push $1
