@@ -39,4 +39,4 @@ workflows:
       - publish:
           filters:
             branches:
-              only: setup-circle-ci
+              only: master
