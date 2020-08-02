@@ -8,6 +8,16 @@ This repository contains Dockerized [NodeJS](https://github.com/nodejs/docker-no
 
 [![CircleCI](https://circleci.com/gh/particle4dev/docker-node.svg?style=svg)](https://circleci.com/gh/particle4dev/docker-node)
 
+## Configuration
+
+This docker image contains the following software stack:
+
+- Alpine
+
+- [NodeJS](https://github.com/nodejs/docker-node)
+
+- [dumb-init](https://github.com/Yelp/dumb-init)
+
 ## Usage
 
 #### Show usage
@@ -19,3 +29,13 @@ $ docker run --rm particle4dev/node node -h
 #### Examples
 
 Please go to [examples/expressjs](./examples/expressjs)
+
+### How to add a new version
+
+- Step1: Open VERSIONS file
+
+- Step2: Add version you wanted in bottom the file. E.g
+
+```
+node-8.9.3-dumb-1.2.1
+```
