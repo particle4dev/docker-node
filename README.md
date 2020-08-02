@@ -13,18 +13,9 @@ This repository contains Dockerized [NodeJS](https://github.com/nodejs/docker-no
 #### Show usage
 
 ```
-$ docker run --rm particle4dev/json-server
+$ docker run --rm particle4dev/node node -h
 ```
 
-#### Server example
+#### Examples
 
-```
-$ docker run  \
-      -d -p 8888:8888 -v $(pwd)/data.json:/data/db.json   \
-      particle4dev/json-server                            \
-      --watch db.json
-```
-
-#### More examples
-
-Most examples documented in [JSON Server project site](https://github.com/typicode/json-server) will work.
+Please go to [examples/expressjs](./Examples/expressjs)
