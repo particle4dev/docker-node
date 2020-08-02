@@ -18,4 +18,4 @@ $ docker run --rm particle4dev/node node -h
 
 #### Examples
 
-Please go to [examples/expressjs](./Examples/expressjs)
+Please go to [examples/expressjs](./examples/expressjs)
